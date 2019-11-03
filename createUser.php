@@ -1,7 +1,7 @@
 <?php 
 ini_set('display_errors', 1);
 echo 'Create User on production server using our API class';
-include(dirname(__FILE__) . "/Curl.php");
+require(dirname(__FILE__) . "/Curl.php");
 
 
 $R = new CurlRequestor();
@@ -19,5 +19,5 @@ $user = array(
             'state' => 'DC'
             );
 
-$data = $R->CreateUser('https://api.example.com', $user);
+$data = $R->CreateUser('http://api.example.com', $user);//did not set up an SSL for this thats why the url is http and not https
 print_r($data);

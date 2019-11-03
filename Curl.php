@@ -49,7 +49,9 @@ class CurlRequestor {
 
                 //execute post
                 $result = curl_exec($ch);
-//      echo curl_error($ch);
+                if(!empty(curl_error($ch))){
+                    echo curl_error($ch);
+                }
                 //close connection
                 curl_close($ch);
               
