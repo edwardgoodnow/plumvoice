@@ -1,0 +1,3 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+104.239.164.246 example.com api.example.com staging-api.example.com
